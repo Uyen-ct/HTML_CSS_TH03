@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        /* container là lưới tổng 6 cột */
+        
+        .schedule {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            /* 6 cột: tiết + thứ 2-6 */
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #33ced3;
+        }
+        /* mỗi ô là 1 div */
+        
+        .cell {
+            border: 1px solid #12411c;
+            padding: 10px;
+            text-align: center;
+        }
+        /* hàng đầu tiên là tiêu đề */
+        
+        .header {
+            font-weight: bold;
+            background-color: #82c988;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>THỜI KHÓA BIỂU</h2>
+
+    <div class="schedule">
+        <!-- dòng tiêu đề -->
+        <div class="cell header">tiết</div>
+        <div class="cell header">thứ 2</div>
+        <div class="cell header">thứ 3</div>
+        <div class="cell header">thứ 4</div>
+        <div class="cell header">thứ 5</div>
+        <div class="cell header">thứ 6</div>
+
+        <!-- dòng 1 -->
+        <div class="cell">1</div>
+        <div class="cell">tcc</div>
+        <div class="cell">logic</div>
+        <div class="cell">csdl</div>
+        <div class="cell">tmđt</div>
+        <div class="cell">tc</div>
+
+        <!-- dòng 2 -->
+        <div class="cell">2</div>
+        <div class="cell">tcc</div>
+        <div class="cell">tc</div>
+        <div class="cell">logic</div>
+        <div class="cell">tmđt</div>
+        <div class="cell">csdl</div>
+
+        <!-- dòng 3 -->
+        <div class="cell">3</div>
+        <div class="cell">tc</div>
+        <div class="cell">tmđt</div>
+        <div class="cell">csdl</div>
+        <div class="cell">tcc</div>
+        <div class="cell">logic</div>
+
+        <!-- dòng 4 -->
+        <div class="cell">4</div>
+        <div class="cell">logic</div>
+        <div class="cell">csdl</div>
+        <div class="cell">tc</div>
+        <div class="cell">tcc</div>
+        <div class="cell">tmđt</div>
+    </div>
+</body>
+
+</html>
